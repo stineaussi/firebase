@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+    <script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyDVdx3r93ZPwKXaaty6uxO0vD_owWDTjQE",
+        authDomain: "stine-e6f17.firebaseapp.com",
+        databaseURL: "https://stine-e6f17.firebaseio.com",
+        projectId: "stine-e6f17",
+        storageBucket: "stine-e6f17.appspot.com",
+        messagingSenderId: "76406685129"
+    };
+    firebase.initializeApp(config);
+    </script>
+</head>
+
+<body>
+
+    <form>
+        <label>
+            header:
+            <input type="text" name="header" id="form_header">
+        </label>
+        <label>
+            Description:
+            <textarea name="description" id="form_description" cols="30" rows="10"></textarea>
+        </label>
+        <input type="submit" value="add to google">
+    </form>
+
+    <div id="app"></div>
+
+    <template id="note">
+        <article>
+            <h1></h1>
+            <div class="description"></div>
+        </article>
+    </template>
+
+    <script src="main.js"></script>
+</body>
+</html>
